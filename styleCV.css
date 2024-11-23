@@ -1,0 +1,92 @@
+main {
+    width: 85%;
+    margin: auto;
+}
+#cv {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border: 1px solid #000;
+    background-color: #d7cddc;
+}
+aside {
+    background-color: #DEF0EF;
+    padding: 1.3rem;
+}
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#entete p {
+    color: #dc4a6b;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#entete h1 {
+    font-size: 2.5rem;
+    color: #FFF;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #dc4a6b;
+}
+#info, #interet, #atout {
+    border-bottom: 2px solid #dc4a6b;
+}
+#info p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+#info p span {
+    margin-left: 1.6rem;
+}
+#info p i {
+    margin-right: 0.8rem;
+}
+section {
+    padding: 1.3rem;
+}
+.block_section {
+    margin: 1.2rem 0 1.2rem 0;
+    box-shadow: 2px 3px 6px 3px #3356;
+    padding: 1.3rem;
+}
+@media print {
+    body {
+        background-image: none;
+    }
+    nav, #block_btn, footer {
+        display: none;
+    }
+    #cv {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        border: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #cv {
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+    #block_btn #download-pdf{
+        display: inline-block;
+        width: 100%;
+        font-size: 1rem;
+    }
+    #entete p {
+
+        text-align: center;
+    }
+    #entete h1 {
+        font-size: 2.1rem;
+
+    }
+    #info p {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+
+
+}
